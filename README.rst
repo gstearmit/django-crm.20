@@ -77,4 +77,25 @@ python manage.py createsuperuser
 
 ---------Env Tach biet--------------
 $ virtualenv -p python django-crm
+$ django-crm/bin/activate
 $ django-crm/bin/pip install django
+
+
+---------install Gem ruby ------------
+
+brew install ruby
+sudo gem install sass
+pip install compressor
+
+--------------------
+
+
+Error : django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+
+$ django-crm/bin/pip install mysqlclient
+------------------------
+Demo credentials for Django CRM:
+
+Email: admin@micropyramid.com
+Password: admin@123!@#
