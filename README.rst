@@ -69,3 +69,12 @@ Need additional commercial support? `Contact us here`_
 
 .. _here: https://django-crm.micropyramid.com/
 
+---------------------
+python manage.py runserver 8080
+python manage.py migrate
+python manage.py createsuperuser
+
+
+---------Env Tach biet--------------
+$ virtualenv -p python django-crm
+$ django-crm/bin/pip install django

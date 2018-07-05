@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'leads',
     'opportunity',
     'planner',
-    'simple_pagination',
+    #'simple_pagination',
     'compressor'
 
 ]
@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dj_crm',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'djangocrm',
+        'USER': 'root',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
-        'PORT': '5432'
+        'PORT': '3306'
     }
 }
 
