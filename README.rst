@@ -69,16 +69,35 @@ Need additional commercial support? `Contact us here`_
 
 .. _here: https://django-crm.micropyramid.com/
 
----------------------
+---------Run ENV 02/01/2019------------
+cd /Users/gstearmit/Django-CRM
+source django-crm/bin/activate
 python manage.py runserver 8080
 python manage.py migrate
 python manage.py createsuperuser
 
+--> access admin pages : http://127.0.0.1:8081/login or http://127.0.0.1:8080/login
+gstearmit@gmail.com / ng******52
 
 ---------Env Tach biet--------------
 $ virtualenv -p python django-crm
 $ django-crm/bin/activate
 $ django-crm/bin/pip install django
+
+—————Hard Code —————
+$ python -m venv  django-crm
+$ cd django-crm
+$ source django-crm/bin/activate
+$ pip  install -r requirements.txt
+
+(django-crm) gstearmit:Django-CRM gstearmit$ python manage.py createsuperuser
+Email: gstearmit@gmail.com
+Username: gstearmit
+Password:
+Password (again):
+Superuser created successfully.
+(django-crm) gstearmit:Django-CRM gstearmit$ python manage.py runserver 8080
+Performing system checks...
 
 
 ---------install Gem ruby ------------
@@ -99,3 +118,23 @@ Demo credentials for Django CRM:
 
 Email: admin@micropyramid.com
 Password: admin@123!@#
+
+-----------------------------------------------
+1.0. git code  https://github.com/MicroPyramid/Django-CRM
+
+
+2.0 Test check case
+   $ python manage.py test accounts
+    Creating test database for alias 'default'...
+    System check identified no issues (0 silenced).
+    ..........
+    ----------------------------------------------------------------------
+    Ran 10 tests in 7.621s
+
+    OK
+    Destroying test database for alias 'default'...
+
+
+
+
+
